@@ -11,6 +11,8 @@ namespace DemoSDK\Providers;
 use Plenty\Plugin\ServiceProvider;
 use DemoSDK\Repositories\ToDoRepository;
 use DemoSDK\Contracts\ToDoRepositoryContract;
+use Plenty\Log\Services\ReferenceContainer;
+use Plenty\Log\Exceptions\ReferenceTypeException;
 
 
 class DemoSDKServiceProvider extends ServiceProvider
