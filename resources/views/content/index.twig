@@ -1,0 +1,10 @@
+<h1>Hello!</h1>
+
+<p>{{ packagistResult.total }} Results</p>
+<ul>
+    {% for packagistItem in packagistResult.results %}
+        <li>{{ packagistItem.name }} : {{ packagistItem.repository }}</li>
+    {% else %}
+        <li>No entries</li>
+    {% endfor %}
+</ul>

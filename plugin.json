@@ -1,0 +1,11 @@
+{
+  "name":"DemoSDK",
+  "description":"My first plugin",
+  "namespace":"DemoSDK",
+  "author":"Alin",
+  "type":"template",
+  "serviceProvider":"DemoSDK\\Providers\\DemoSDKServiceProvider",
+  "dependencies" : {
+    "guzzlehttp/guzzle": "6.2.*"
+  }
+}
