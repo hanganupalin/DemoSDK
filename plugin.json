@@ -5,6 +5,7 @@
   "author":"Alin",
   "type":"template",
   "serviceProvider":"DemoSDK\\Providers\\DemoSDKServiceProvider",
+  "runOnBuild":["DemoSDK\\Migrations\\CreateToDoTable"],
   "dependencies" : {
     "guzzlehttp/guzzle": "6.2.*"
   }

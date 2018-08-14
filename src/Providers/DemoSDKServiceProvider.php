@@ -9,6 +9,9 @@ namespace DemoSDK\Providers;
 
 
 use Plenty\Plugin\ServiceProvider;
+use DemoSDK\Repositories\ToDoRepository;
+use DemoSDK\Contracts\ToDoRepositoryContract;
+
 
 class DemoSDKServiceProvider extends ServiceProvider
 {
@@ -20,5 +23,6 @@ class DemoSDKServiceProvider extends ServiceProvider
     public function register()
     {
         $this->getApplication()->register(DemoSDKRouteServiceProvider::class);
+        $this->getApplication()->bind(ToDoRepositoryContract::class ,ToDoRepository::class);
     }
 }

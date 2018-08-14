@@ -16,6 +16,10 @@ class DemoSDKRouteServiceProvider extends RouteServiceProvider
 {
     public function map(Router $router)
     {
-        $router->get('external','DemoSDK\Controllers\ContentController@sayHi');
+        $router->get('external','DemoSDK\Controllers\ContentController@seyHi');
+        $router->get('todo', 'DemoSDK\Controllers\ContentController@showToDo');
+        $router->post('todo', 'DemoSDK\Controllers\ContentController@createToDo');
+        $router->put('todo/{id}', 'DemoSDK\Controllers\ContentController@updateToDo')->where('id','\d+');
+        $router->delete('todo/{id}', 'DemoSDK\Controllers\ContentController@removeToDo');
     }
 }
