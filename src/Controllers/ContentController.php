@@ -64,7 +64,7 @@ class ContentController extends Controller
         $newToDo = $toDoRepo->createTask($request->all());
         $this
             ->getLogger('ContentController_createToDo')
-            ->setReferenceType('newToDoId')
+            ->setReferenceType('toDoId')
             ->setReferenceValue($newToDo->id)
             ->info('DemoSDK::migration.createToDoInformation', ['userId' => $newToDo->createdForId ]);
         return json_encode($newToDo);
@@ -80,7 +80,7 @@ class ContentController extends Controller
         $updateToDo = $toDoRepo->updateTask($id);
         $this
             ->getLogger('ContentController_updateToDo')
-            ->setReferenceType('updateToDoId')
+            ->setReferenceType('toDoId')
             ->setReferenceValue($id)
             ->info('DemoSDK::migration.createToDoInformation', ['id' => $id ]);
         return json_encode($updateToDo);

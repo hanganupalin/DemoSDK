@@ -25,4 +25,16 @@ class DemoSDKServiceProvider extends ServiceProvider
         $this->getApplication()->register(DemoSDKRouteServiceProvider::class);
         $this->getApplication()->bind(ToDoRepositoryContract::class ,ToDoRepository::class);
     }
+
+    public function boot(ReferenceContainer $referenceContainer)
+    {
+        // Register reference types for logs.
+        try
+        {
+            $referenceContainer->add([ 'toDoId' => 'toDoId' ]);
+        }
+        catch(ReferenceTypeException $ex)
+        {
+        }
+    }
 }
