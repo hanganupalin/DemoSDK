@@ -59,3 +59,43 @@ a {
 .input {
     width:100%;
 }
+
+/* Done button & Delete button*/
+.tasks .done-button {
+    display:inline-block;
+    font-size:1.8em;
+    color: #5d9c67;
+    border:0;
+    opacity:0.4;
+}
+
+.tasks .delete-button {
+    display:inline-block;
+    font-size:1.8em;
+    color: #77525c;
+    border:0;
+    opacity:0.4;
+}
+
+.tasks li:hover .done-button,
+.tasks li:hover .delete-button {
+    opacity:1;
+    cursor:pointer;
+}
+
+/* Submit button */
+.submit {
+    background-color:#fff;
+    padding: 5px 10px;
+    border:1px solid #ddd;
+    width:100%;
+    margin-top:10px;
+    box-shadow: 3px 3px 0 #ddd;
+}
+
+.submit:hover {
+    cursor:pointer;
+    background-color:#ddd;
+    color: #fff;
+    box-shadow: 3px 3px 0 #ccc;
+}
