@@ -82,7 +82,7 @@ class ContentController extends Controller
             ->getLogger('ContentController_updateToDo')
             ->setReferenceType('toDoId')
             ->setReferenceValue($id)
-            ->info('DemoSDK::migration.createToDoInformation', ['id' => $id ]);
+            ->info('DemoSDK::migration.updateToDoInformation', ['id' => $id ]);
         return json_encode($updateToDo);
     }
 
