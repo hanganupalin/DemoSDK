@@ -1,6 +1,6 @@
 {
   "name":"DemoSDK",
-  "description":"My first plugin",
+  "description":"Not My first plugin",
   "namespace":"DemoSDK",
   "author":"Alin",
   "type":"template",
